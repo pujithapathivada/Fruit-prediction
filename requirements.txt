@@ -1,6 +1,7 @@
 # Web Application Deployment Requirements for Streamlit Cloud
-streamlit>=1.30.0
+streamlit>=1.35.0
 tensorflow-cpu>=2.15.0
 opencv-python-headless>=4.8.0
 Pillow>=10.0.0
 numpy>=1.24.3,<2.0.0
+protobuf>=3.20.3,<5.0.0dev
