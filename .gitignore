@@ -23,6 +23,7 @@ venv.bak/
 
 # Model weights & large binaries (keep the directory structure, ignore binaries)
 models/*.keras
+!models/freshness_model.keras
 models/*.h5
 models/*.tflite
 models/*.pb

@@ -42,10 +42,10 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-BRAIN_DIR = Path(r"C:\Users\pujit\.gemini\antigravity-ide\brain\d5b2fcf4-9d1a-43cc-a0c3-9a01f9320c47")
-HERO_BASKET_PATH = BRAIN_DIR / "fresh_produce_basket_1790953937345.jpg"
-APPLE_PATH = BRAIN_DIR / "crisp_red_apple_1790953958391.jpg"
-SALAD_BOWL_PATH = BRAIN_DIR / "sidebar_salad_bowl_1790953979506.jpg"
+ASSETS_DIR = Path(__file__).resolve().parent / "assets"
+HERO_BASKET_PATH = ASSETS_DIR / "fresh_produce_basket_1790953937345.jpg"
+APPLE_PATH = ASSETS_DIR / "crisp_red_apple_1790953958391.jpg"
+SALAD_BOWL_PATH = ASSETS_DIR / "sidebar_salad_bowl_1790953979506.jpg"
 
 def load_image_b64(path: Path) -> str:
     """Load image and return base64 data string."""
